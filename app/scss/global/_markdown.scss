@@ -1,0 +1,32 @@
+// Global styles.
+h1 {
+  @extend .d-block;
+  @extend .relative;
+  @extend .p-1;
+
+  &::before {
+    content: '#';
+    position: absolute;
+    left: -2rem;
+    bottom: 0;
+    line-height: 1.8;
+    @extend .t-1;
+    @extend .p-1;
+    @extend .cg-6;
+  }
+}
+
+[contenteditable='true'] {
+  outline: none;
+}
+
+// Theme-specific styles.
+.markdown {
+  line-height: 1.5;
+
+  h1 {
+    @extend .t-3;
+    @extend .tw-bold;
+  }
+
+}
