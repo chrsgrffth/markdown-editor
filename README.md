@@ -1,12 +1,11 @@
 <a href="https://codeclimate.com/github/chrsgrffth/markdown-editor"><img src="https://codeclimate.com/github/chrsgrffth/markdown-editor/badges/gpa.svg" /></a>
 
 <br>
-
 # Markdown Editor
 
-### Vue 2x
-### [Decent.scss](https://github.com/octopuscreative/decent-scss)
+Built on Vue 2x with [decent.scss](https://github.com/octopuscreative/decent-scss).
 
+<br>
 ## Building
 #### Development
 ```
@@ -19,6 +18,7 @@ $ npm start
 $ brunch build --production
 ```
 
+<br>
 ## Resources
 - https://coligo.io/learn-vuex-by-building-notes-app/
 - https://auth0.com/blog/build-an-app-with-vuejs/
