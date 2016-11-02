@@ -1,6 +1,7 @@
-<a href="https://codeclimate.com/github/chrsgrffth/markdown-editor"><img src="https://codeclimate.com/github/chrsgrffth/markdown-editor/badges/gpa.svg" /></a>
+[![GPA Badge](https://codeclimate.com/github/chrsgrffth/markdown-editor/badges/gpa.svg)](https://codeclimate.com/github/chrsgrffth/markdown-editor)
 
-<br>
+---
+
 # Markdown Editor
 
 Built on [Vue 2x](https://github.com/vuejs/vue) with [Decent](https://github.com/octopuscreative/decent-scss).
