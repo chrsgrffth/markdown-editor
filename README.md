@@ -4,10 +4,9 @@
 
 # Markdown Editor
 
-Built on [Vue 2x](https://github.com/vuejs/vue) with [Decent](https://github.com/octopuscreative/decent-scss).         
+Built on [Vue 2x](https://github.com/vuejs/vue) with [Decent](https://github.com/octopuscreative/decent-scss).  
 
-
-
+<br>
 ## Building
 #### Development
 ```
