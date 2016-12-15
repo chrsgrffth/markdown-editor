@@ -17,9 +17,7 @@ var editor = {
     this.editor.focus()
 
     this.editor.addEventListener('keypress', (e) => {
-
       this.output.textContent = e.currentTarget.innerHTML
-
     })
   }
 

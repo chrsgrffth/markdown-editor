@@ -1,38 +1,26 @@
 // Global styles.
-h1 {
-  @extend .d-block;
-  @extend .relative;
-  @extend .p-1;
-
-  &::before {
-    content: '#';
-    position: absolute;
-    right: 100%;
-    bottom: 0;
-    line-height: 1.8;
-    @extend .ta-right;
-    @extend .tw-light;
-    @extend .t-0;
-    @extend .p-1;
-    @extend .cg-6;
-  }
+// These are the base styles that can't be customized.
+h1::before {
+  content: '#';
+  bottom: 0.35rem;
 }
 
-h2 {
+h2::before {
+  content: '##';
+  bottom: 0.05rem;
+}
+
+h1, h2, h3, h4 {
   @extend .d-block;
   @extend .relative;
-  @extend .p-1;
 
   &::before {
-    content: '##';
     position: absolute;
-    right: 100%;
-    bottom: 0;
+    right: 105%;
     line-height: 1.8;
     @extend .ta-right;
     @extend .tw-light;
     @extend .t-0;
-    @extend .p-1;
     @extend .cg-6;
   }
 }
@@ -48,11 +36,24 @@ h2 {
   h1 {
     @extend .t-3;
     @extend .tw-bold;
+    @extend .mb-3;
   }
 
   h2 {
     @extend .t-2;
     @extend .tw-bold;
+    @extend .mb-2;
   }
 
+  ul,
+  ol {
+    @extend .mb-3;
+    @extend .pl-2;
+  }
+
+  li {
+    @extend .mb-1;
+
+    list-style-type: disc;
+  }
 }
