@@ -1,30 +1,26 @@
-// Import.
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+document.addEventListener('DOMContentLoaded', function() {
 
-// Components.
-import Home from './components/pages/home.vue'
+  editor.init();
 
-// Register.
-Vue.use(VueRouter)
+});
 
+var editor = {
 
-// Define routes.
-const routes = [
-  { 
-    path: '/',
-    component: Home 
+  editor: document.getElementById('editor'),
+  output: document.getElementById('output'),
+
+  init: function () {
+
+    this.output.textContent = this.editor.innerHTML
+
+    this.editor.contentEditable = true
+    this.editor.focus()
+
+    this.editor.addEventListener('keypress', (e) => {
+
+      this.output.textContent = e.currentTarget.innerHTML
+
+    })
   }
-]
 
-// Define router.
-const router = new VueRouter({
-  mode: 'history',
-  routes
-})
-
-// Instantiate app.
-const app = new Vue({
-  router
-}).$mount('#app')
-
+}
